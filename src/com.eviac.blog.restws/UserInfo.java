@@ -24,21 +24,14 @@ public class UserInfo {
     // expression, into the method.
     public String userName(@PathParam("i") String i) {
 
-
-
-
         String name = i;
         return "<User>" + "<Name>" + name + "</Name>" + "</User>";
     }
-
 
     @GET
     @Path("/age/{j}")
     @Produces(MediaType.TEXT_XML)
     public String userAge(@PathParam("j") int j) {
-
-
-
 
         int age = j;
         return "<User>" + "<Age>" + age + "</Age>" + "</User>";
